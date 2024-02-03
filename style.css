@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+#app{
+    width: 95%;
+    max-width: 500px;
+    /* border: 3px solid rgb(255, 60, 0); */
+    margin: 0 auto;
+}
+.input{
+    background: white;
+    padding: 12px;
+    height: 180px;
+}
+input[type=text]{
+    height:40px;
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    border: 1px solid #bdbbbb;
+    border-radius: 8px;
+    outline: none;
+    margin:10px 0;
+}
+form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+/* span:first-child{font-size: 25px;} */
+#addTaskBtn{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.startBtn, .pauseBtn, .stopBtn {
+    /* background-color: blue; */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80px;
+}
+.startBtn,.pauseBtn,.stopBtn{
+    padding: 0px;
+    background-color: blue;
+}
+.disabled{
+    color: #b9b5b5;
+    background-color: #ece7e7;
+}
+.list{
+    margin-top: 10px;
+}
+.task{
+    background-color: white;
+    border: 1px solid blue;
+    margin-top: 10px;
+}
+.executing{background-color: red; color: white;}
+.done{background-color: green; color:white;}
+.paused{background-color: #d6d0d0; color: black;}
+.stopped{background-color: #fcc511; color: black;}
+.done, .executing, .paused, .stopped{padding: 3px; border-radius: 4px; margin-bottom: 5px;margin-left: 4px; width: fit-content;}
+#clock{font-size: 40px; padding: 2px; display: flex; flex-direction: column; align-items: center;}
+.display{background-color: #f5eeee; width: fit-content;}
+.description{border-bottom: 1px solid #f5f3f3; margin-left: 16px; font-size: large;}
+.description, #clock {margin-bottom: 10px;}
+.close{
+    background-color: gray; 
+    color: white;width: fit-content; 
+    border-radius: 10%; ;height: fit-content; padding: 2px 4px;
+    position: relative; top:0; left: 96%;
+    cursor: default;
+}
+.close:hover{background-color: #575757;}
+.validator{height: 20px; color: red; font-size: small;}
